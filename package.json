@@ -1,0 +1,35 @@
+{
+  "name": "oc-statsd",
+  "version": "1.0.0",
+  "description": "OpenComponents Statsd plugin",
+  "main": "index.js",
+  "scripts": {
+    "jshint": "jshint index.js test",
+    "test": "npm run jshint && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opentable/oc-statsd"
+  },
+  "keywords": [
+    "opencomponents",
+    "oc",
+    "statsd",
+    "plugin",
+    "oc-plugin"
+  ],
+  "author": "Matteo Figus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opentable/oc-statsd/issues"
+  },
+  "homepage": "https://github.com/opentable/oc-statsd",
+  "dependencies": {
+    "statsd-client": "^0.2.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jshint": "^2.9.2",
+    "mocha": "^2.4.5"
+  }
+}
