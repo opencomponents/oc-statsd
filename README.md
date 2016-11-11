@@ -17,7 +17,7 @@ npm i oc-statsd --save
 
 ### Registry setup
 
-More info about integrating OC plugins: [here](https://github.com/opentable/oc/blob/master/docs/registry.md#plugins)
+More info about integrating OC plugins: [here](https://github.com/opentable/oc/wiki/Registry#plugins)
 
 ```js
 ...
