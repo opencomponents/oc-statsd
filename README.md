@@ -1,11 +1,11 @@
-oc-statsd [![Build Status](https://secure.travis-ci.org/opentable/oc-statsd.png?branch=master)](http://travis-ci.org/opentable/oc-statsd)
+oc-statsd [![Build Status](https://secure.travis-ci.org/opencomponents/oc-statsd.png?branch=master)](http://travis-ci.org/opencomponents/oc-statsd)
 ==========
 
 [OpenComponents](https://github.com/opentable/oc) plugin for interacting with [StatsD](https://github.com/etsy/statsd) inside OC components.
 
 # Requirements:
 
-* Node version: min: **0.10.40**, recommended: **>=4.2.X**
+* Node version: min: **4**
 * OC registry
 * StatsD server
 
@@ -21,7 +21,7 @@ More info about integrating OC plugins: [here](https://github.com/opentable/oc/w
 
 ```js
 ...
-var registry = new oc.registry(configuration);
+const registry = oc.registry(configuration);
 
 registry.register({
   name: 'statsd',
@@ -32,7 +32,7 @@ registry.register({
     port: 8125,
     debug: false
   }
-}, function(err){
+}, (err) => {
   if(err){
     console.log('plugin initialisation failed:', err);
   } else {
@@ -51,12 +51,12 @@ Example for a components' server.js:
 
 ```js
 
-module.exports.data = function(context, callback){
+module.exports.data = (context, callback) => {
 
-  var before = new Date();
-  var stats = context.plugins.statsd('mycomponent.doSomething');
+  const before = new Date();
+  const stats = context.plugins.statsd('mycomponent.doSomething');
 
-  doSomething(function(){
+  doSomething(() => {
     ...
     stats.timing('something.happened', new Date() - before);
     callback(null, { ... });
@@ -66,7 +66,7 @@ module.exports.data = function(context, callback){
 
 ### API
 
-####Api for plugin setup:
+#### Api for plugin setup:
 
 |parameter|type|mandatory|description|
 |---------|----|---------|-----------|

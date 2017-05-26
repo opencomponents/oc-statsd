@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/opentable/oc-statsd"
+    "url": "https://github.com/opencomponents/oc-statsd"
   },
   "keywords": [
     "opencomponents",
@@ -21,9 +21,9 @@
   "author": "Matteo Figus",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/opentable/oc-statsd/issues"
+    "url": "https://github.com/opencomponents/oc-statsd/issues"
   },
-  "homepage": "https://github.com/opentable/oc-statsd",
+  "homepage": "https://github.com/opencomponents/oc-statsd",
   "dependencies": {
     "statsd-client": "^0.2.2"
   },
