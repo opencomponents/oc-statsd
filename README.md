@@ -1,6 +1,8 @@
 oc-statsd [![Build Status](https://secure.travis-ci.org/opencomponents/oc-statsd.png?branch=master)](http://travis-ci.org/opencomponents/oc-statsd)
 ==========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/opencomponents/oc-statsd.svg)](https://greenkeeper.io/)
+
 [OpenComponents](https://github.com/opentable/oc) plugin for interacting with [StatsD](https://github.com/etsy/statsd) inside OC components.
 
 # Requirements:
