@@ -7,7 +7,7 @@ oc-statsd [![Build Status](https://secure.travis-ci.org/opencomponents/oc-statsd
 
 # Requirements:
 
-* Node version: min: **4**
+* Node version: min: **6**
 * OC registry
 * StatsD server
 
@@ -77,7 +77,7 @@ module.exports.data = (context, callback) => {
 |port|`number`|no|Default 8152, the statsd port|
 |prefix|`string`|yes|The statsd prefix|
 
-#### Api for plugin usage:
+#### Api for plugin usage
 
 The plugin name is declared when initialising a plugin. Following assumes `statsd` is the designated name.
 
